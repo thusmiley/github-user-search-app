@@ -8,18 +8,17 @@
   - [Built with](#built-with)
 
 ## Overview
+
 GitHub user search app
 
 ### Screenshot
 
 ![](./assets/preview.jpg)
 
-
 ### Links
 
-- Git URL: https://github.com/thusmiley/clipboard-landing-page.git
-- Live Site URL: https://thusmiley.github.io/clipboard-landing-page/
-
+- Git URL: https://github.com/thusmiley/github-user-search-app.git
+- Live Site URL: https://thusmiley.github.io/github-user-search-app/
 
 ### Built with
 

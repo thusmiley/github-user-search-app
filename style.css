@@ -86,36 +86,49 @@ main {
   padding-right: calc(8px + 1.5625vw);
 }
 
-header, .dark-btn, .light-btn {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header p, .dark-btn p, .light-btn p {
+header p {
   font-size: 26px;
   font-weight: bold;
   color: var(--logo-color);
 }
-header a, .dark-btn a, .light-btn a {
+header a {
   font-size: 13px;
   letter-spacing: 2.5px;
   font-weight: bold;
 }
-header img, .dark-btn img, .light-btn img {
+header img {
   margin-left: 16px;
 }
 
-.light-btn, .dark-btn {
+#light-btn, #dark-btn {
   cursor: pointer;
+  position: relative;
 }
-.light-btn:hover a, .dark-btn:hover a {
+#light-btn a, #dark-btn a {
+  position: absolute;
+  right: 30px;
+}
+
+#dark-btn:hover a {
   color: var(--logo-color);
 }
-.light-btn:hover img, .dark-btn:hover img {
+#dark-btn:hover img {
   filter: grayscale(32%) sepia(22%) brightness(10%);
 }
 
-.light-btn {
+#light-btn:hover a {
+  color: #90A4D4;
+}
+#light-btn:hover img {
+  filter: grayscale(15%) sepia(28%) brightness(56%) saturate(77%) opacity(79%) contrast(347%) invert(9%);
+}
+
+#light-btn {
   display: none;
 }
 

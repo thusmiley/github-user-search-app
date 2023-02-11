@@ -84,7 +84,7 @@ main
     padding-right: calc(8px + 1.5625vw)  
 
 // Header    
-header, .dark-btn, .light-btn
+header
     display: flex
     justify-content: space-between
     align-items: center
@@ -98,14 +98,25 @@ header, .dark-btn, .light-btn
         font-weight: bold
     img
         margin-left: 16px   
-.light-btn, .dark-btn    
+
+#light-btn, #dark-btn    
     cursor: pointer
-    &:hover 
-        a
-            color:  var(--logo-color)
-        img
-            filter: grayscale(32%) sepia(22%) brightness(10%)
-.light-btn
+    position: relative
+    a
+        position: absolute
+        right: 30px
+#dark-btn:hover 
+    a
+        color:  var(--logo-color)
+    img
+        filter: grayscale(32%) sepia(22%) brightness(10%)
+#light-btn:hover 
+    a
+        color:  #90A4D4
+    img
+        filter: grayscale(15%) sepia(28%) brightness(56%) saturate(77%) opacity(79%) contrast(347%) invert(9%)
+
+#light-btn
     display: none    
 
 // Search    
