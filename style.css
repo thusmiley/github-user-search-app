@@ -122,7 +122,7 @@ header img {
 }
 
 #light-btn:hover a {
-  color: #90A4D4;
+  opacity: 0.7;
 }
 #light-btn:hover img {
   filter: grayscale(15%) sepia(28%) brightness(56%) saturate(77%) opacity(79%) contrast(347%) invert(9%);
