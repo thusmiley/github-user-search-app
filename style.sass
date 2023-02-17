@@ -176,10 +176,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     -webkit-box-shadow: 0 0 0 30px white inset 
     -webkit-text-fill-color: var(--placeholder-link-text)
     background-clip: content-box 
-.error-msg
+#error-msg
     color: #F74646
     position: absolute
-    right: 24px
+    right: 120px
     display: none
 
 // Profile
@@ -194,9 +194,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     img
         position: absolute
         left: 48px  
+        width: 117px
+        border-radius: 100px
     p
         margin-top: 8px    
         color: var(--main-text)
+        margin-left: 30px
     h3 
         margin-top: 2px
         color: $blue
@@ -232,7 +235,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .link
     display: flex
     align-items: center
-    p
+    a
+        font-size: 15px
+    p, a
         color: var(--main-text)
     img
         margin-right: 16px
@@ -248,6 +253,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     white-space: nowrap        
 
 @media only screen and (max-width: 700px)    
+    main
+        width: 100%
+
     // Search
     p
         font-size: 13px    
@@ -262,15 +270,15 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     button
         font-size: 14px
         padding: 12px 18px
-    .error-msg
-        right: 18px    
+    #error-msg
+        right: 100px    
            
     // Profile
     .profile
         padding: 32px 24px 48px 24px               
     .profile-top    
         display: flex
-        align-items: flex-start
+        align-items: center
         img
             position: relative
             left: 0 
@@ -282,7 +290,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
             font-size: 13px   
             margin-top: -10px  
         p
-            margin-top:  3px
+            margin-top: 2px
+            margin-left: 0
     .dev-info
         flex-direction: column    
     .description p 

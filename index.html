@@ -7,7 +7,7 @@
     <meta name="keywords" content="HTML,CSS,JavaScript, API" />
     <meta name="author" content="Thu Smiley" />
     <meta property="og:image" content="./assets/preview.jpg" />
-    
+
     <link
       rel="icon"
       type="image/png"
@@ -36,29 +36,33 @@
 
       <!-- Search -->
       <section class="search">
-        <div class="input-wrapper">
+        <form class="input-wrapper" onsubmit="search(event)">
           <img src="./assets/icon-search.svg" alt="" />
-          <input type="search" placeholder="Search GitHub username…" />
-          <p class="error-msg">No results</p>
-        </div>
+          <input
+            type="text"
+            placeholder="Search GitHub username…"
+            id="inputname"
+          />
+          <p id="error-msg">No results</p>
+          <button type="submit">Search</button>
+        </form>
 
-        <button>Search</button>
       </section>
 
       <!-- Profile -->
       <section class="profile">
         <div class="profile-top">
-            <img src="./assets/octocat.png" alt="" />
-            <div class="dev-info">
-              <div class="name-id">
-                <h1>The Octocat</h1>
-                <h3>@octocat</h3>
-              </div>
-              <p>Joined 25 Jan 2011</p>
+          <img id="user-img" src="./assets/octocat.png" alt="" />
+          <div class="dev-info">
+            <div class="name-id">
+              <h1 id="user-name">The Octocat</h1>
+              <h3 id="user-id">@octocat</h3>
             </div>
+            <p id="joined-date">Joined 25 Jan 2011</p>
+          </div>
         </div>
         <div class="description">
-          <p>
+          <p id="bio">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
             odio. Quisque volutpat mattis eros.
           </p>
@@ -68,41 +72,44 @@
         <div class="stats">
           <div class="stat">
             <h2>Repos</h2>
-            <h3>8</h3>
+            <h3 id="repos">8</h3>
           </div>
 
           <div class="stat">
             <h2>Followers</h2>
-            <h3>3938</h3>
+            <h3 id="followers">3938</h3>
           </div>
 
           <div class="stat">
             <h2>Following</h2>
-            <h3>9</h3>
+            <h3 id="following">9</h3>
           </div>
         </div>
 
         <!-- Links -->
         <section class="links">
           <div class="link">
-            <img class="location-icon" src="./assets/icon-location.svg" alt="" />
-            <p>San Francisco</p>
+            <img
+              class="location-icon"
+              src="./assets/icon-location.svg"
+              alt=""
+            />
+            <p id="location">San Francisco</p>
           </div>
 
           <div class="link">
             <img src="./assets/icon-twitter.svg" alt="" />
-            <p href="#">Not Available</p>
+            <p id="twitter" href="#">Not Available</p>
           </div>
 
           <div class="link">
-            <img  src="./assets/icon-website.svg" alt="" />
-            <a class="cut-text" href="#">https://github.blog</a>
+            <img src="./assets/icon-website.svg" alt="" />
+            <a id="website" class="cut-text" href="#">https://github.blog</a>
           </div>
-
 
           <div class="link">
             <img src="./assets/icon-company.svg" alt="" />
-            <p>@github</p>
+            <p id="company">@github</p>
           </div>
         </section>
       </section>
